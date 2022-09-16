@@ -13,9 +13,9 @@ function App() {
       <Route exact path='/'>
         <Houses/>
       </Route>
-      <Route exact path='/houses/:houseId'>
-        <HouseDetail/>
-      </Route>
+      <Route exact path='/houses/:houseId'
+        render={({match}) => <HouseDetail match={match}/>}
+      />
       <Route exact path='/house/create'>
         <CreateHouse/>
       </Route>

@@ -25,13 +25,13 @@ export class Houses extends Component {
               {this.props.houses?.map((h) => {
                 return (
                     <HouseCard
-                id={h.id} 
-                region={h.region} 
-                name={h.name} 
-                words={h.words}
-                characters={h.characters}
-                key={h.id}
-              />
+                        id={h.id} 
+                        region={h.region} 
+                        name={h.name} 
+                        words={h.words}
+                        characters={h.characters}
+                        key={h.id}
+                    />
                 )
               })}
             </div>
